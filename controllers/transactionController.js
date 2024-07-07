@@ -5,7 +5,7 @@ const transactions = express.Router();
 transactions.use(express.json())
 
 transactions.get(`/`, (req, res) => {
-  res.send(`Hello World as well`);
+  res.json(listOfTransactions);
 });
 transactions.get(`/:id`, (req, res) => {
   let id = req.params.id;
