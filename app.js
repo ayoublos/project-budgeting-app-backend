@@ -9,6 +9,7 @@ app.get(`/`,(req,res)=>{
     res.send(`Hello World`)
 })
 app.get(`/*`,(req,res)=>{
-    res.status(404).send(`Inexistent Route`)
+    res.status(404).send(`Inexistent Route`) 
+    
 })
 module.exports=app
